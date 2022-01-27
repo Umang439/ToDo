@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Title"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Subject"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Summary"
+        android:layout_below="@+id/tv2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/tv1" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv2" />
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/et2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv2" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+
+        android:layout_below="@+id/et3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"/>
+
+</RelativeLayout>
